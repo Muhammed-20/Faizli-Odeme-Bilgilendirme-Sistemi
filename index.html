@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kredi Faiz Hesaplama Uygulaması</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+        <h1>Kredi Taksit Hesaplama Formu</h1>
+        <form id="formKredi" action="">
+            <label for="txtKrediTutari">Çekeceğimiz Kredi Tutarı:</label>
+            <input id="txtKrediTutari"  placeholder="Kredi miktarını giriniz..." type="text">
+            
+            <label for="foran"> Faiz Oranı:</label>
+            <input id="foran" placeholder="Faiz oranını ondalık olarak giriniz Örn:%50 ise 0.5 yazınız." type="text">
+            
+            <label for="girilenZaman">Girilen Zaman:</label>
+            <input id="girilenZaman" placeholder="Girilen zaman..." type="text">
+            
+            <label for="yurutulenZaman"> Yürütülen Zaman:</label>
+            <select name="" id="yurutulenZaman">
+                <option value="Günlük">Günlük</option>
+                <option value="Aylık">Aylık</option>
+                <option value="Yıllık">Yıllık</option>
+            </select>
+
+            <label for="listeVade">Geri Ödeme Taksit Sayısı:</label>
+            <select name="" id="listeVade">
+                <option value="12">12 ay</option>
+                <option value="24">24 ay</option>
+                <option value="36">36 ay</option>
+                <option value="48">48 ay</option>
+            </select>
+            
+                <h5 id="sonuc"></h5>
+                <input onclick="krediHesapla();" type="button" value="Hesapla">
+        </form>
+
+      
+        
+       
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    font-family:cursive;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-image: linear-gradient(to left, #cb8a22, #4fc0d3 );
+    
+}
+body h1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    border :thin solid black;
+
+}
+form label{
+   display: flex;
+   justify-content:left;
+   height: 50px;
+   width: 350px;
+   text-transform: uppercase;
+   letter-spacing: 2px;   
+}
+form input ,select{
+    background-color: azure;
+    margin-top: 5px;
+    color: rgb(193, 100, 100);
+    max-width: 350px;
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 3px;
+}
